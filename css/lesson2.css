@@ -1,0 +1,576 @@
+/* ============================================================
+   Markup Lab — Lesson 2 · Layout lab
+   Builds on the tokens and shared components in styles.css
+   ============================================================ */
+
+/* ---------- Intro ---------- */
+
+/* The lab is a workspace, so let it use more of a laptop screen. */
+main {
+  max-width: 1360px;
+}
+
+.topbar-inner,
+.site-tabs-inner,
+.site-footer {
+  max-width: 1360px;
+}
+
+.lesson-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 0.75fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: end;
+  padding-top: 0.5rem;
+}
+
+.lesson-intro h1 {
+  margin-bottom: 1rem;
+}
+
+.lesson-intro .lede {
+  margin-bottom: 0;
+}
+
+.lesson-meter {
+  padding: 1.2rem 1.25rem;
+}
+
+.meter-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+  font-size: 0.9rem;
+}
+
+.meter-head span {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--accent-strong);
+}
+
+.meter-track {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  overflow: hidden;
+}
+
+.meter-track span {
+  display: block;
+  width: 0%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--btn-bg), var(--btn-bg-2));
+  transition: width 0.35s ease;
+}
+
+.lesson-meter p {
+  margin: 0.75rem 0 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.meter-link {
+  margin-top: 0.9rem;
+}
+
+/* ---------- Challenge tabs ---------- */
+
+.challenge-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.9rem 0 1rem;
+  padding-bottom: 0.25rem;
+}
+
+.challenge-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex: none;
+  padding: 0.5rem 0.8rem 0.5rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink-2);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+}
+
+.challenge-chip:hover {
+  border-color: var(--line-strong);
+  background: var(--surface-2);
+}
+
+.challenge-chip .chip-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-size: 0.72rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.challenge-chip .chip-num svg {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.challenge-chip[aria-current="step"] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  box-shadow: 0 0 0 1px var(--accent) inset;
+}
+
+.challenge-chip.is-complete .chip-num {
+  background: var(--ok-soft);
+  color: var(--ok);
+}
+
+/* ---------- Challenge layout ---------- */
+
+.challenge-grid {
+  display: grid;
+  grid-template-columns: 340px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.brief-card {
+  padding: 1.4rem 1.5rem;
+}
+
+.brief-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.9rem;
+}
+
+.brief-index {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.brief-card h2 {
+  margin-bottom: 0.6rem;
+  font-size: clamp(1.4rem, 2.4vw, 1.85rem);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.brief-card h2:focus {
+  outline: none;
+}
+
+.brief-goal {
+  margin-bottom: 1.3rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.brief-subhead {
+  margin: 0 0 0.55rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.hint-list {
+  margin: 0 0 1.3rem;
+  padding-left: 1.15rem;
+  color: var(--ink-2);
+  font-size: 0.88rem;
+}
+
+.hint-list li + li {
+  margin-top: 0.4rem;
+}
+
+.solution-box {
+  border-top: 1px solid var(--line);
+  padding-top: 0.9rem;
+}
+
+.solution-box summary {
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-strong);
+  width: fit-content;
+}
+
+.solution-box summary::marker {
+  color: var(--accent);
+}
+
+.solution-code {
+  margin: 0.8rem 0;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--code-bg);
+  overflow-x: auto;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: var(--ink-2);
+}
+
+.solution-code code {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: inherit;
+}
+
+/* ---------- Previews ---------- */
+
+.preview-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-content: start;
+}
+
+.preview-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.preview-card figcaption {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.65rem 0.8rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+
+.preview-card figcaption em {
+  margin-left: auto;
+  font-style: normal;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.preview-dot {
+  width: 8px;
+  height: 8px;
+  flex: none;
+  border-radius: 50%;
+}
+
+.preview-dot-target {
+  background: var(--muted);
+  box-shadow: 0 0 0 3px var(--surface-2);
+}
+
+.preview-dot-live {
+  background: var(--ok);
+  box-shadow: 0 0 0 3px var(--ok-soft);
+}
+
+.preview-card iframe {
+  display: block;
+  width: 100%;
+  height: 380px;
+  min-height: 200px;
+  border: 0;
+  background: #fff;
+  pointer-events: none;
+}
+
+/* ---------- Editor ---------- */
+
+.editor-card {
+  margin-top: 1rem;
+  padding: 1.2rem 1.25rem 1.25rem;
+}
+
+.editor-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.editor-head label {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.editor-tools {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.editor-hint {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.btn-sm {
+  padding: 0.42rem 0.7rem;
+  font-size: 0.78rem;
+  border-radius: 9px;
+}
+
+.editor {
+  display: block;
+  width: 100%;
+  min-height: 230px;
+  resize: vertical;
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  background: var(--code-bg);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.86rem;
+  line-height: 1.65;
+  tab-size: 2;
+  caret-color: var(--accent);
+}
+
+.editor:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.editor-help {
+  margin: 0.6rem 0 0;
+  font-size: 0.76rem;
+  color: var(--muted);
+}
+
+.editor-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 0.9rem;
+}
+
+.check-panel {
+  margin-top: 1rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1rem;
+}
+
+.check-summary {
+  margin: 0 0 0.6rem;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--ink-2);
+}
+
+.check-summary.is-success {
+  color: var(--ok);
+}
+
+.check-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.4rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--ink-2);
+}
+
+.check-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-top: 0.1rem;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.check-item.is-pass .check-icon {
+  background: var(--ok-soft);
+  color: var(--ok);
+}
+
+.check-item.is-fail .check-icon {
+  background: var(--bad-soft);
+  color: var(--bad);
+}
+
+.check-item.is-fail {
+  color: var(--muted);
+}
+
+/* ---------- Finish panel ---------- */
+
+.lesson-finish {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.25rem;
+  margin-top: 1.25rem;
+  padding: 1.3rem 1.5rem;
+  border-color: color-mix(in srgb, var(--ok) 35%, var(--line));
+  background: var(--ok-soft);
+}
+
+.finish-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--ok);
+  color: #fff;
+}
+
+.finish-icon svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.lesson-finish h2 {
+  margin: 0 0 0.2rem;
+  font-size: 1.15rem;
+  color: var(--ok);
+}
+
+.lesson-finish p {
+  margin: 0;
+  max-width: 38rem;
+  font-size: 0.88rem;
+  color: var(--ink-2);
+}
+
+.finish-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-left: auto;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 980px) {
+  .lesson-intro {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .challenge-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .preview-pair {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .preview-card iframe {
+    height: 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  .preview-pair {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .preview-card iframe {
+    height: 300px;
+  }
+
+  .challenge-tabs {
+    gap: 0.4rem;
+  }
+
+  .challenge-chip {
+    padding: 0.35rem;
+  }
+
+  .challenge-chip .chip-title {
+    display: none;
+  }
+
+  .brief-card {
+    padding: 1.2rem 1.15rem;
+  }
+
+  .editor-card {
+    padding: 1rem;
+  }
+
+  .editor-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .editor-tools {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .editor-hint {
+    display: none;
+  }
+
+  .finish-actions {
+    margin-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .meter-track span,
+  .challenge-chip {
+    transition: none;
+  }
+}

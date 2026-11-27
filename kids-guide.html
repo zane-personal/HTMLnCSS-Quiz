@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kids Coding Guide (Age 6) · Markup Lab</title>
+  <meta name="description" content="A play-based guide for introducing a 6-year-old to computers and coding: mouse and keyboard basics, unplugged logic, block-based coding, and recommended apps and books." />
+  <meta name="theme-color" content="#f5f4fb" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0c0b14" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%235b4bff'/%3E%3Cpath d='M22 20 12 32l10 12M42 20l10 12-10 12' fill='none' stroke='white' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/kids-guide.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-bg" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span class="brand-text"><strong>Markup Lab</strong><span>HTML &amp; CSS practice</span></span>
+      </a>
+      <div class="topbar-right">
+        <span class="pill pill-level">Guide · Age 6</span>
+        <a class="btn btn-ghost btn-sm" href="index.html">Back to quiz</a>
+      </div>
+    </div>
+    <nav class="site-tabs" aria-label="Site sections">
+      <div class="site-tabs-inner">
+        <a class="site-tab" href="index.html">Quiz</a>
+        <a class="site-tab" href="lesson2.html">Layout Lab</a>
+        <a class="site-tab" href="kids-guide.html" aria-current="page">Kids Coding Guide</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="guide-hero" aria-labelledby="guide-title">
+      <div class="guide-hero-copy">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Parent &amp; educator guide · Age 6</p>
+        <h1 id="guide-title">Kids Coding Guide <span class="grad">(Age 6)</span></h1>
+        <p class="lede">
+          A calm, play-first way to introduce a six-year-old to computers and coding.
+          Start with clicks and puzzles, move to screen-free logic, then let them snap
+          blocks together to make a story come alive.
+        </p>
+        <div class="guide-hero-actions">
+          <a class="btn btn-primary" href="#core-approach">Start with the approach</a>
+          <a class="btn btn-ghost" href="#references">Recommended references</a>
+        </div>
+        <ul class="guide-facts">
+          <li><strong>20–30</strong><span>minutes per session</span></li>
+          <li><strong>3</strong><span>gentle steps</span></li>
+          <li><strong>0</strong><span>lines of syntax</span></li>
+        </ul>
+      </div>
+
+      <aside class="card guide-hero-card" aria-labelledby="glance-title">
+        <p class="eyebrow">At a glance</p>
+        <h2 id="glance-title">A simple path</h2>
+        <ol class="path-list">
+          <li>
+            <span class="path-num" aria-hidden="true">1</span>
+            <div><strong>Get comfortable</strong><span>Mouse, keyboard, healthy habits</span></div>
+          </li>
+          <li>
+            <span class="path-num" aria-hidden="true">2</span>
+            <div><strong>Think like a coder</strong><span>Sequence, loops, if-then</span></div>
+          </li>
+          <li>
+            <span class="path-num" aria-hidden="true">3</span>
+            <div><strong>Build something</strong><span>Blocks, stories, mini-games</span></div>
+          </li>
+        </ol>
+        <p class="guide-note">The goal is curiosity and confidence — not perfect code.</p>
+      </aside>
+    </section>
+
+    <section class="guide-section" id="core-approach" aria-labelledby="core-title">
+      <div class="section-head">
+        <p class="eyebrow">Core approach</p>
+        <h2 id="core-title">Play first. Think visually. Make stories.</h2>
+        <p>
+          At six, coding is less about syntax and more about noticing patterns, giving clear
+          instructions, and fixing things when they do not go to plan. Keep activities short,
+          playful, and full of immediate feedback.
+        </p>
+      </div>
+
+      <div class="principle-grid">
+        <article class="card principle-card">
+          <span class="principle-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" />
+              <circle cx="12" cy="12" r="3.5" />
+            </svg>
+          </span>
+          <h3>Play-based learning</h3>
+          <p>Turn each idea into a game: a treasure hunt, a robot walk, a silly story. If it feels like play, the child will keep coming back.</p>
+        </article>
+
+        <article class="card principle-card">
+          <span class="principle-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7" rx="1.5" />
+              <rect x="14" y="3" width="7" height="7" rx="1.5" />
+              <rect x="3" y="14" width="7" height="7" rx="1.5" />
+              <rect x="14" y="14" width="7" height="7" rx="1.5" />
+            </svg>
+          </span>
+          <h3>Visual logic</h3>
+          <p>Use colours, arrows, blocks, and pictures instead of typed code. The child can see the order of steps and change one piece at a time.</p>
+        </article>
+
+        <article class="card principle-card">
+          <span class="principle-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+              <path d="M8 7h8M8 11h6" />
+            </svg>
+          </span>
+          <h3>Create &amp; tell stories</h3>
+          <p>Let the child choose the character, the goal, and the ending. A story gives the coding a purpose and makes the result worth sharing.</p>
+        </article>
+      </div>
+
+      <aside class="guide-callout">
+        <strong>Coach the thinking, not the answer.</strong>
+        <p>Instead of “That’s wrong,” ask: “What did the computer do? What could we change?” That turns every mistake into a tiny debugging lesson.</p>
+      </aside>
+    </section>
+
+    <section class="guide-section" id="step-1" aria-labelledby="step-1-title">
+      <div class="step-head">
+        <span class="step-badge">Step 1</span>
+        <div>
+          <h2 id="step-1-title">Basic computer familiarity</h2>
+          <p>Build comfort before code. Short, successful interactions matter more than speed.</p>
+        </div>
+      </div>
+
+      <div class="guide-card-grid">
+        <article class="card guide-card">
+          <span class="guide-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="2.5" width="12" height="19" rx="6" />
+              <path d="M12 6v4" />
+            </svg>
+          </span>
+          <h3>Mouse &amp; trackpad skills</h3>
+          <p>Practice clicking, double-clicking, and dragging through simple, engaging mini-games.</p>
+          <ul class="guide-list">
+            <li><strong>Click:</strong> pop bubbles, match pairs, or feed a virtual pet.</li>
+            <li><strong>Double-click:</strong> open a folder or launch a drawing app.</li>
+            <li><strong>Drag and drop:</strong> sort shapes, build a puzzle, or move blocks.</li>
+          </ul>
+          <p class="try-this"><strong>Try this:</strong> “Can you put every red shape in the red box?”</p>
+        </article>
+
+        <article class="card guide-card">
+          <span class="guide-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.5" y="5" width="19" height="14" rx="2.5" />
+              <path d="M6 9h.01M9 9h.01M12 9h.01M15 9h.01M18 9h.01M7 13h10M8 17h8" />
+            </svg>
+          </span>
+          <h3>Keyboard basics</h3>
+          <p>Introduce the main keys by what they do, not by typing speed.</p>
+          <ul class="guide-list">
+            <li><strong>Letter keys:</strong> find the first letter of their name.</li>
+            <li><strong>Spacebar:</strong> jump, pause, or add a space in a drawing app.</li>
+            <li><strong>Enter:</strong> send a simple command or start a game.</li>
+            <li><strong>Arrow keys:</strong> move a character one step at a time.</li>
+          </ul>
+          <p class="try-this"><strong>Try this:</strong> “Use the arrows to walk your character to the star.”</p>
+        </article>
+
+        <article class="card guide-card">
+          <span class="guide-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z" />
+            </svg>
+          </span>
+          <h3>Healthy screen-time habits</h3>
+          <p>Keep sessions short and finish while the child is still enjoying them.</p>
+          <ul class="guide-list">
+            <li><strong>Keep it short:</strong> around 20–30 minutes per session.</li>
+            <li><strong>Look away:</strong> every 10–15 minutes, focus on something far away.</li>
+            <li><strong>Sit comfortably:</strong> feet supported, screen at eye level, wrists relaxed.</li>
+            <li><strong>Move between sessions:</strong> stretch, walk, or play a quick offline game.</li>
+          </ul>
+          <p class="try-this"><strong>Try this:</strong> set a visual timer and finish with a favourite offline activity.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" id="step-2" aria-labelledby="step-2-title">
+      <div class="step-head">
+        <span class="step-badge">Step 2</span>
+        <div>
+          <h2 id="step-2-title">Unplugged coding logic</h2>
+          <p>No screen needed. These games teach the ideas behind code using bodies, cards, and everyday routines.</p>
+        </div>
+      </div>
+
+      <div class="guide-card-grid">
+        <article class="card guide-card">
+          <span class="guide-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h10M10 2l4 4-4 4M20 18H10M14 14l-4 4 4 4" />
+            </svg>
+          </span>
+          <h3>Sequence</h3>
+          <p>Play “human robot.” Give one instruction at a time and follow it exactly.</p>
+          <ul class="guide-list">
+            <li>“Move forward two steps.”</li>
+            <li>“Turn left.”</li>
+            <li>“Move forward one step.”</li>
+          </ul>
+          <p>If the robot bumps into a chair, that is a <strong>bug</strong>. Fixing the instructions together is <strong>debugging</strong>.</p>
+          <p class="try-this"><strong>Try this:</strong> draw a simple obstacle course and guide each other through it.</p>
+        </article>
+
+        <article class="card guide-card">
+          <span class="guide-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 11a8 8 0 0 0-14.9-4M4 4v5h5M4 13a8 8 0 0 0 14.9 4M20 20v-5h-5" />
+            </svg>
+          </span>
+          <h3>Loops</h3>
+          <p>Show repetition with actions the child already knows.</p>
+          <ul class="guide-list">
+            <li>“Clap three times. Now repeat that three times.”</li>
+            <li>“Do four star jumps, then repeat the whole set twice.”</li>
+          </ul>
+          <p>A loop is a shortcut for “do this again.”</p>
+          <p class="try-this"><strong>Try this:</strong> build a short clap-and-stomp pattern, then loop it.</p>
+        </article>
+
+        <article class="card guide-card">
+          <span class="guide-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v5M12 8 6 14M12 8l6 6M6 14v4M18 14v4" />
+              <circle cx="12" cy="3" r="1.5" />
+              <circle cx="6" cy="20" r="1.5" />
+              <circle cx="18" cy="20" r="1.5" />
+            </svg>
+          </span>
+          <h3>Conditions (if–then)</h3>
+          <p>Introduce basic decision-making rules with everyday examples.</p>
+          <ul class="guide-list">
+            <li>“If it rains, bring an umbrella; else, just walk.”</li>
+            <li>“If the light is red, stop; else, go.”</li>
+            <li>“If you are hungry, choose a snack; else, keep playing.”</li>
+          </ul>
+          <p>Conditions help a program choose what to do next.</p>
+          <p class="try-this"><strong>Try this:</strong> make a “morning robot” that chooses clothes based on the weather.</p>
+        </article>
+      </div>
+
+      <div class="script-card">
+        <p class="script-label">Human robot game</p>
+        <p><strong>Parent:</strong> “Forward two steps. Turn right. Forward one step.”</p>
+        <p><strong>Child:</strong> follows the instructions exactly, then checks the goal.</p>
+        <p><strong>Together:</strong> “What happened? Which instruction should we change?”</p>
+      </div>
+    </section>
+
+    <section class="guide-section" id="step-3" aria-labelledby="step-3-title">
+      <div class="step-head">
+        <span class="step-badge">Step 3</span>
+        <div>
+          <h2 id="step-3-title">Block-based coding (visual programming)</h2>
+          <p>Visual blocks remove the typing barrier. The child snaps instructions together and sees the result immediately.</p>
+        </div>
+      </div>
+
+      <div class="guide-card-grid">
+        <article class="card guide-card">
+          <span class="guide-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 3h6v4a2 2 0 0 0 4 0V3h2v6h-4a2 2 0 0 0 0 4h4v6h-6v-4a2 2 0 0 0-4 0v4H3v-6h4a2 2 0 0 0 0-4H3V3h6z" />
+            </svg>
+          </span>
+          <h3>Snap blocks together</h3>
+          <p>Start with one or two blocks: move, jump, play a sound. Add a new block only when the first one works.</p>
+          <ul class="guide-list">
+            <li>Watch the character move.</li>
+            <li>Listen for the sound.</li>
+            <li>Change one block and try again.</li>
+          </ul>
+          <p class="try-this"><strong>Try this:</strong> make a character take three steps, then play a sound.</p>
+        </article>
+
+        <article class="card guide-card">
+          <span class="guide-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+              <path d="M8 7h8M8 11h6" />
+            </svg>
+          </span>
+          <h3>Build a story or mini-game</h3>
+          <p>Let the child choose the theme: a cat chasing a star, a rocket landing, a dinosaur dance party.</p>
+          <ul class="guide-list">
+            <li>Who is the main character?</li>
+            <li>What happens first?</li>
+            <li>How does the story end?</li>
+          </ul>
+          <p class="try-this"><strong>Try this:</strong> plan the story on paper before opening the app.</p>
+        </article>
+
+        <article class="card guide-card">
+          <span class="guide-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.7 8.7 0 0 1-3.8-.9L3 21l2-4.2a8.4 8.4 0 1 1 16-5.3z" />
+              <path d="M8 10h.01M12 10h.01M16 10h.01" />
+            </svg>
+          </span>
+          <h3>Solve it together</h3>
+          <p>Stay curious and collaborative. Ask questions instead of grabbing the mouse.</p>
+          <ul class="guide-list">
+            <li>“Why did that happen?”</li>
+            <li>“Which block should we adjust?”</li>
+            <li>“What should we try next?”</li>
+          </ul>
+          <p class="try-this"><strong>Try this:</strong> let the child explain the bug before you offer a fix.</p>
+        </article>
+      </div>
+
+      <aside class="guide-callout">
+        <strong>Keep the session small.</strong>
+        <p>One new idea per session is plenty. Finish while it still feels fun, and leave the next step for another day.</p>
+      </aside>
+    </section>
+
+    <section class="guide-section" id="references" aria-labelledby="references-title">
+      <div class="section-head">
+        <p class="eyebrow">Recommended references</p>
+        <h2 id="references-title">Apps, books, and screen-free resources</h2>
+        <p>These are optional starting points. Pick one that matches the child’s interests and your available devices.</p>
+      </div>
+
+      <div class="reference-group">
+        <h3>Digital platforms &amp; apps</h3>
+        <div class="reference-grid">
+          <article class="card reference-card">
+            <div class="reference-top">
+              <h4>ScratchJr</h4>
+              <span class="pill">Ages 5–7</span>
+            </div>
+            <p>Visual block-based coding app designed for young children to create interactive stories and games with minimal reading required.</p>
+            <a class="reference-link" href="https://www.scratchjr.org/" target="_blank" rel="noopener noreferrer">
+              Visit ScratchJr
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7M8 7h9v9" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="card reference-card">
+            <div class="reference-top">
+              <h4>Code.org</h4>
+              <span class="pill">Ages 4–8</span>
+            </div>
+            <p>Structured, age-appropriate puzzles and mazes in Course A and Pre-reader Express, covering sequences, loops, and events.</p>
+            <a class="reference-link" href="https://code.org/educate/curriculum/elementary-school" target="_blank" rel="noopener noreferrer">
+              Explore Code.org
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7M8 7h9v9" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="card reference-card">
+            <div class="reference-top">
+              <h4>Lightbot</h4>
+              <span class="pill">Puzzle game</span>
+            </div>
+            <p>Command-block puzzle games that build spatial reasoning and programming logic as the child guides a robot to light up tiles.</p>
+            <a class="reference-link" href="https://lightbot.com/" target="_blank" rel="noopener noreferrer">
+              Visit Lightbot
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7M8 7h9v9" />
+              </svg>
+            </a>
+          </article>
+        </div>
+      </div>
+
+      <div class="reference-group">
+        <h3>Unplugged &amp; book references</h3>
+        <div class="reference-grid two">
+          <article class="card reference-card">
+            <div class="reference-top">
+              <h4>Hello Ruby</h4>
+              <span class="pill">Book + activities</span>
+            </div>
+            <p>Storybooks and hands-on activities by Linda Liukas that introduce computational thinking in an approachable, imaginative way.</p>
+            <a class="reference-link" href="https://www.helloruby.com/" target="_blank" rel="noopener noreferrer">
+              Visit Hello Ruby
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7M8 7h9v9" />
+              </svg>
+            </a>
+          </article>
+
+          <article class="card reference-card">
+            <div class="reference-top">
+              <h4>CS Unplugged</h4>
+              <span class="pill">Free resources</span>
+            </div>
+            <p>A free collection of screen-free games, card activities, and exercises that teach core computer science concepts.</p>
+            <a class="reference-link" href="https://csunplugged.org/" target="_blank" rel="noopener noreferrer">
+              Visit CS Unplugged
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7M8 7h9v9" />
+              </svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="guide-section" id="routine" aria-labelledby="routine-title">
+      <div class="section-head">
+        <p class="eyebrow">A simple rhythm</p>
+        <h2 id="routine-title">A four-week starting plan</h2>
+        <p>Repeat or reorder as you like. Short, happy sessions beat long, tired ones.</p>
+      </div>
+
+      <ol class="routine-list">
+        <li>
+          <span class="routine-week">Week 1</span>
+          <div><h3>Explore the computer</h3><p>Click, double-click, drag, and find the main keys. Play one mouse game.</p></div>
+        </li>
+        <li>
+          <span class="routine-week">Week 2</span>
+          <div><h3>Play human robot</h3><p>Practice sequence, loops, and if-then rules with bodies and everyday objects.</p></div>
+        </li>
+        <li>
+          <span class="routine-week">Week 3</span>
+          <div><h3>Try ScratchJr</h3><p>Make a character move, add a sound, and change one block at a time.</p></div>
+        </li>
+        <li>
+          <span class="routine-week">Week 4</span>
+          <div><h3>Build a tiny story</h3><p>Choose a character, a goal, and an ending. Share it with someone.</p></div>
+        </li>
+      </ol>
+    </section>
+
+    <aside class="card guide-next" aria-labelledby="next-title">
+      <div>
+        <p class="eyebrow">Keep practising</p>
+        <h2 id="next-title">Ready for more?</h2>
+        <p>Try the HTML &amp; CSS quiz or build a layout in the lab.</p>
+      </div>
+      <div class="guide-next-actions">
+        <a class="btn btn-primary" href="index.html">Take the quiz</a>
+        <a class="btn btn-ghost" href="lesson2.html">Open the layout lab</a>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>Kids Coding Guide · Age 6 · Play-based learning</p>
+    <p class="footer-meta">3 steps · 5 recommended references · No syntax required</p>
+  </footer>
+</body>
+</html>
